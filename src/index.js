@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import HelloWorld from "./HelloWorld";
-import AppClass  from "./AppClass";
+import App from "./App";
+import AppClass from "./AppClass";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -10,11 +10,12 @@ root.render(
     <div className='container'>
       <div className='=row'>
         <div className='col'>
-          <HelloWorld msg="Hello world bhai! using classes"/>
+          {/* <App msg="app component using functional component" /> */}
+          <AppClass msg="app using class component" />
         </div>
       </div>
     </div>
-    
+
   </React.StrictMode>
 );
 
